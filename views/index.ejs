@@ -1,0 +1,15 @@
+<h1>Web Server Node Js </h1>
+<h2>Selamat Datang <%= nama %></h2>
+
+
+<h4>Daftar nama </h4>
+<% if (mahasiswa.length<1) { %>
+    <p>Data mahasiswa kosong</p>
+    <% } else {%> 
+        <% mahasiswa.forEach(mhs=> { %>
+    <ul>
+        <li>Nama :<%= mhs.nama %></li>
+        <li>E-mail : <%= mhs.email %> </li>
+    </ul>
+ <% }) %>
+ <% } %>  
